@@ -1,0 +1,102 @@
+.navigation {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 250px;
+    z-index: 100;
+
+    .toggle {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(231, 222, 222);
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #ff216d;
+        font-weight: bold;
+        font-size: 1.4rem;
+        padding: 5px 20px;
+        span {
+            position: relative;
+            width: 20px;
+            height: 50px;
+        }
+        span::before{
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #ff216d;
+            transition: 0.5s;
+        }
+        span::after{
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #ff216d;
+            transition: 0.5s;
+        }
+    }
+    .toggle::before{
+        content: 'Menu';
+        margin-right: 20px;
+    }
+    .toggleToggle{
+        .toggleToggle::before{
+            content: 'Fechar';
+        }
+        span::before{
+            transform: rotate(225deg);
+            top: 24px;
+        }
+        span::after{
+            transform: rotate(135deg);
+            bottom: 24px;
+        }
+    }
+    ul{
+        position: relative;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+        li {
+            position: relative;
+            list-style: none;
+            transition: 0.5s;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(-250px);
+            transition-delay: calc(0.1s * 1);
+            a {
+                position: relative;
+                text-decoration: none;
+                display: block;
+                padding: 10px 20px;
+                height: 50px;
+                background: rgb(231, 222, 222);
+                color: #333;
+            }
+            a:hover{
+                background: #f6f6f6;
+                color: #ff216d;
+            }
+        }
+    }
+    
+    .navigationToggle ul li{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

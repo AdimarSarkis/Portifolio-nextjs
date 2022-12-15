@@ -13,10 +13,12 @@
         width: 100%;
         height: 100%;
         filter: blur(5px);
+        opacity: 0.3;
     }
     .copy {
         h2 {
             position: relative;
+            bottom: 200px;
             z-index: 1;
             font-size: 1.4rem;
             font-weight: bold;
