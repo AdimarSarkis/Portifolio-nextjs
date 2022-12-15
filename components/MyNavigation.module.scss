@@ -3,7 +3,7 @@
     top: 20px;
     right: 20px;
     height: 20px;
-    width: 250px;
+    width: 160px;
     z-index: 100;
 
     .toggle {
@@ -63,6 +63,7 @@
             transform: rotate(135deg);
             bottom: 24px;
         }
+        
     }
     ul{
         position: relative;
@@ -76,8 +77,9 @@
             transition: 0.5s;
             visibility: hidden;
             opacity: 0;
-            transform: translateX(-250px);
-            transition-delay: calc(0.1s * 1);
+            transform: translate(-250px, -16px);
+            width: 160px;
+            transition-delay: calc(0.1s * 0);
             a {
                 position: relative;
                 text-decoration: none;
@@ -91,12 +93,23 @@
                 background: #f6f6f6;
                 color: #ff216d;
             }
+            &:nth-child(2){
+                transition-delay: calc(0.1s * 1);
+            }
+            &:nth-child(3){
+                transition-delay: calc(0.1s * 2);
+            }
         }
+        
     }
     
-    .navigationToggle ul li{
-        visibility: visible;
-        opacity: 1;
-        transform: translateX(0px);
-    }
+}
+.navigationToggle{
+    ul{
+        li{
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-40px, -16px);
+        } 
+    } 
 }
