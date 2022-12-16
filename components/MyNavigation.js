@@ -1,7 +1,6 @@
 import styles from "./MyNavigation.module.scss";
 import { useState } from "react";
-import {HashLink as Link} from "react-router-hash-link";
-import { BrowserRouter as Router } from "react-router-dom";
+
 
 export default function Navigation({
     sobre,
@@ -29,9 +28,9 @@ export default function Navigation({
         <div className={isActive ? `${navigationToggle} ${navigation}` : `${navigation}`} onClick={handleToggle}>
             <div className={isActive ? `${toggleToggle} ${toggle}` : `${toggle}`} onClick={handleToggle}><span></span></div>
             <ul>    
-                <li><a href="#sobre" onClick={() => scrollTo(sobre)}>Sobre</a></li>
-                <li><a href="#habilidade" onClick={() => scrollTo(habilidades)}>Habilidades</a></li>
-                <li><a href="#projetos" onClick={() => scrollTo(projetos)}>Projetos</a></li>
+                <li><a href="#about" onClick={() => scrollTo(sobre)}>About</a></li>
+                <li><a href="#skills" onClick={() => scrollTo(habilidades)}>Skills</a></li>
+                <li><a href="#projects" onClick={() => scrollTo(projetos)}>Projects</a></li>
             </ul>
         </div>
     );

@@ -1,0 +1,31 @@
+.container{
+    z-index: 1;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    bottom: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid springgreen;
+    .hardskills{
+        width: 75rem;
+        height: 350px;
+        position: relative;
+        top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        margin-left: 10vw;
+        margin: 0 auto;
+        border: 1px solid steelblue;
+        padding: 25px;
+        padding-top: 15px;
+        padding: 0 120px;
+
+    }
+}

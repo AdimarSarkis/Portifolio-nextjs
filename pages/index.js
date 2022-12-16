@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import { useEffect, useRef } from "react"
 import Image from 'next/image'
-import Contato from '../components/contato'
-import Navigation from '../components/navigation'
+import Contato from '../components/MyContato'
+import Navigation from '../components/MyNavigation'
 import MySection from '../components/MySection'
 import styles from '../styles/Home.module.scss'
 import { BrowserRouter } from 'react-router-dom'
-import About from "../components/about"
-
+import About from "../components/MyAbout"
+import Skill from '../components/MySkills'
 
 export default function Home() {
   const section1 = useRef();
@@ -32,7 +32,7 @@ export default function Home() {
         />
         <div ref={section1}>
           <MySection
-            headline={`SOBRE`}
+            headline={`ABOUT`}
             scrollTo={scrollTo} 
             goToSectionRef={section2}
             showArrow={true}
@@ -42,15 +42,16 @@ export default function Home() {
         <div ref={section2}>
           <MySection
             image={"/imagens/1202299.jpg"}
-            headline={`HABILIDADES`}
+            headline={`SKILLS`}
             scrollTo={scrollTo}
             goToSectionRef={section3}
             showArrow={true} />
+            <Skill />
         </div>
         <div ref={section3}> 
           <MySection
            
-            headline={`PROJETOS`}
+            headline={`PROJECTS`}
             showArrow={false} />
         </div>
         <Contato />
