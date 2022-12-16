@@ -6,12 +6,14 @@ import Navigation from '../components/navigation'
 import MySection from '../components/MySection'
 import styles from '../styles/Home.module.scss'
 import { BrowserRouter } from 'react-router-dom'
+import About from "../components/about"
 
 
 export default function Home() {
   const section1 = useRef();
   const section2 = useRef();
   const section3 = useRef();
+
   function scrollTo(section){
     section.current.scrollIntoView({ behaivor: "smooth"});
   }
@@ -28,25 +30,26 @@ export default function Home() {
           habilidades={section2}
           projetos={section3}
         />
-        <div ref={section1} id="section1">
-          <MySection 
-            image={`/imagens/1202299.jpg`}
+        <div ref={section1}>
+          <MySection
             headline={`SOBRE`}
             scrollTo={scrollTo} 
             goToSectionRef={section2}
-            showArrow={true}/>
+            showArrow={true}
+            />
+          <About />
         </div>
-        <div ref={section2} id="section2">
-          <MySection 
-            image={`/imagens/1151679.jpg`}
+        <div ref={section2}>
+          <MySection
+            image={"/imagens/1202299.jpg"}
             headline={`HABILIDADES`}
             scrollTo={scrollTo}
             goToSectionRef={section3}
             showArrow={true} />
         </div>
-        <div ref={section3} id="section3"> 
+        <div ref={section3}> 
           <MySection
-            image={`/imagens/632051.png`}
+           
             headline={`PROJETOS`}
             showArrow={false} />
         </div>

@@ -7,6 +7,7 @@ export default function MySection({
     scrollTo,
     goToSectionRef,
     showArrow,
+    components,
 }){
     return(
         <div className={styles.section}>
@@ -14,6 +15,7 @@ export default function MySection({
                 <h2>{headline}</h2>
             </div>
             <Image src={image} layout={`fill`}/>
+            <div>{components}</div>
             {showArrow && (
                 <button className={styles.downarrow}
                     onClick={() => scrollTo(goToSectionRef)}></button>
