@@ -7,7 +7,7 @@ $cor-detalhe: linear-gradient(83deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1
     width: 160px;
     z-index: 100;
     @media (max-width: 425px){
-        width: 80px;
+        width: 85px;
     }
 
     .toggle {
@@ -97,6 +97,9 @@ $cor-detalhe: linear-gradient(83deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1
             transform: translate(-250px, -16px);
             width: 160px;
             transition-delay: calc(0.1s * 0);
+            @media (max-width: 425px){
+                width: 85px;
+            }
             a {
                 position: relative;
                 text-decoration: none;

@@ -1,18 +1,26 @@
 import styles from './MySkill.module.scss';
-import Image from "next/image";
 import Cards from './Cards';
 
-/**
- * <div className={styles.imgHab}>
-                <Image src={`/imagens/vue.svg`} width={90} height={90}/>
-                <h3>VueJs</h3>
-                <p>Básico</p>
-            </div>
- */
+
 export default function Skill(){
+    /*
+    <div>   
+            <div className={styles.softskills}>
+                <h3>Adaptabilidade</h3>
+                <h3>Esforçado</h3>
+                <h3>Proativo</h3>
+                <h3>Metodologia ágil</h3>
+                <h3>Flexibilidade</h3>
+                <h3>Resiliência</h3>
+                <h3>Paixão por Aprender</h3>
+                <h3>Responsabilidade</h3>
+                <h3>Colaboração</h3>
+            </div>
+        </div>
+    */
     return(
     <div className={styles.container}>
-        <div className={styles.hardskills}>
+        <div className={styles.skills}>
             <Cards
                 image={`/imagens/vue.svg`}
                 nome={"VueJs"}
@@ -52,24 +60,9 @@ export default function Skill(){
                 image={`/imagens/getbootstrap.svg`}
                 nome={"Bootstrap"}
                 nivel={"Básico"}
-            />
-                        
+            />              
         </div>
             
-        <div className={styles.soft}>
-            <h2>Soft Skills</h2>
-            <div className={styles.softskills}>
-                <h3>Adaptabilidade</h3>
-                <h3>Esforçado</h3>
-                <h3>Proativo</h3>
-                <h3>Metodologia ágil</h3>
-                <h3>Flexibilidade</h3>
-                <h3>Resiliência</h3>
-                <h3>Paixão por Aprender</h3>
-                <h3>Responsabilidade</h3>
-                <h3>Colaboração</h3>
-            </div>
-        </div>
     </div>    
     );
 }
