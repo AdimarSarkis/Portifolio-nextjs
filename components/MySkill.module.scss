@@ -12,6 +12,10 @@
     @media ((min-width: 1024px) and (max-width: 1026px)){
         top: 950px;
     }
+
+    @media (min-width: 1440px){
+        top: 1600px;
+    }
     @media (max-width: 768px) {
         top: 650px;
         flex-wrap: wrap;
@@ -33,6 +37,6 @@
             padding: 0;
             padding-top: 10px;
         }
-       
+
     }
 }
