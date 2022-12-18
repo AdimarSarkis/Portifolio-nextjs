@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.scss'
 import { BrowserRouter } from 'react-router-dom'
 import About from "../components/MyAbout"
 import Skill from '../components/MySkills'
-
+import Project from '../components/Projects'
 export default function Home() {
   const section1 = useRef();
   const section2 = useRef();
@@ -50,9 +50,21 @@ export default function Home() {
         </div>
         <div ref={section3}> 
           <MySection
-           
             headline={`PROJECTS`}
             showArrow={false} />
+            <Project 
+              nomeBox1={"Lorem ispuls"}
+              descricaoBox1={"Lorem Lorem Lorem Lorem Lorem Lorem"}
+              nomeBox2={"Lorem ispuls"}
+              descricaoBox2={"Lorem Lorem Lorem Lorem Lorem Lorem"}
+              nomeBox3={"Lorem ispuls"}
+              descricaoBox3={"Lorem Lorem Lorem Lorem Lorem Lorem"}
+              nomeBox4={"Lorem ispuls"}
+              descricaoBox4={"Lorem Lorem Lorem Lorem Lorem Lorem"}
+              nomeBox5={"Lorem ispuls"}
+              descricaoBox5={"Lorem Lorem Lorem Lorem Lorem Lorem"}
+              />
+            
         </div>
         <Contato />
       

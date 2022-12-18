@@ -1,13 +1,16 @@
+$cor-detalhe4: linear-gradient(83deg,  #ff416c 10.8%, #ff4b2b 94.3% );
 .contato{
     z-index: 100;
     position: fixed;
     bottom: 20px;
     left: 20px;
-    font-size: 1.8rem;
-    color: #ff216d;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 90px;
+    a:hover{
+        color: #ff4b2b;
+    }   
     
 }

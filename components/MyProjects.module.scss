@@ -1,0 +1,22 @@
+.container{
+    z-index: 100;
+    position: relative;
+    bottom: 530px;
+    margin: 0 70px;
+    overflow: hidden;
+    border: 1px solid orangered;
+    border-radius: .5rem;
+    @media only screen and (max-width: 1000px){
+        &{
+            border-radius: 0;
+        }
+    }
+    .slider{
+        display: flex;
+        width: 500%;
+        height: 30rem;
+        transition: all 0.25s ease-in;
+        transform: translateX(0);
+        
+    }
+}
