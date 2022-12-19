@@ -9,6 +9,7 @@ import { BrowserRouter } from 'react-router-dom'
 import About from "../components/MyAbout"
 import Skill from '../components/MySkills'
 import Project from '../components/Projects'
+
 export default function Home() {
   const section1 = useRef();
   const section2 = useRef();
@@ -52,7 +53,8 @@ export default function Home() {
           <MySection
             headline={`PROJECTS`}
             showArrow={false} />
-            <Project 
+            <Project
+              imageBox1={'/imagens/austin-neill-Be7DMcK7k3o-unsplash.jpg'}
               nomeBox1={"Lorem ispuls"}
               descricaoBox1={"Lorem Lorem Lorem Lorem Lorem Lorem"}
               nomeBox2={"Lorem ispuls"}

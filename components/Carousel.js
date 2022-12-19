@@ -1,4 +1,5 @@
 import styles from './MyCarousel.module.scss';
+import Image from 'next/image';
 export default function CarouselBox({
     nome,
     descricao,
@@ -6,15 +7,16 @@ export default function CarouselBox({
     num
 }){
     return (
+        
         <div className={`${styles.box} box${num}`}>
+            <Image src={image} className={styles.img} layout={`fill`}/>
             <div className={styles.bg}></div>
             <div className={styles.details}>
-                <h1>{nome}</h1>
+                <h2>{nome}</h2>
                 <p>{descricao}</p>
 
-                <button>Check Now</button>
+                <button><a>VISITAR</a></button>
             </div>
-            <div className={styles.illustration}><div className={styles.inner}></div></div>
         </div>
 
     );

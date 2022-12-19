@@ -20,6 +20,10 @@
         top: 650px;
         flex-wrap: wrap;
     }
+    @media (max-width: 500px){
+        top: 960px;
+    }
+
     .skills{
         width: 75rem;
         height: 485px;

@@ -12,6 +12,8 @@
     "eslint-plugin-prettier": "^4.2.1"
   },
   "dependencies": {
+    "@coreui/coreui": "^4.2.4",
+    "@coreui/react": "^4.4.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "gsap": "^3.11.3",

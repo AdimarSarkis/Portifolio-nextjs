@@ -1,22 +1,20 @@
 .container{
-    z-index: 100;
+    margin: 0 auto;
+    margin-top: 30px;
+    /*width: 1205px;*/
     position: relative;
-    bottom: 530px;
-    margin: 0 70px;
+    bottom: 550px;
+    width: 75%;
+    height: 480px;
     overflow: hidden;
-    border: 1px solid orangered;
-    border-radius: .5rem;
-    @media only screen and (max-width: 1000px){
-        &{
-            border-radius: 0;
-        }
-    }
+    box-shadow: 10px 5px 20px 1px black;
     .slider{
+        z-index: 100;
+        width: 600%;
+        height: 100.7%;
         display: flex;
-        width: 500%;
-        height: 30rem;
-        transition: all 0.25s ease-in;
-        transform: translateX(0);
+        
+    
         
     }
 }
