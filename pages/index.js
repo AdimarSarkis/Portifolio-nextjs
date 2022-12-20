@@ -57,8 +57,8 @@ export default function Home() {
               imageBox1={'/imagens/austin-neill-Be7DMcK7k3o-unsplash.jpg'}
               nomeBox1={"Lorem ispuls"}
               descricaoBox1={"Lorem Lorem Lorem Lorem Lorem Lorem"}
-              nomeBox2={"Lorem ispuls"}
-              descricaoBox2={"Lorem Lorem Lorem Lorem Lorem Lorem"}
+              nomeBox2={"Projeto CRUD"}
+              descricaoBox2={"projetinho feito para tomar experiencia em crud"}
               nomeBox3={"Lorem ispuls"}
               descricaoBox3={"Lorem Lorem Lorem Lorem Lorem Lorem"}
               nomeBox4={"Lorem ispuls"}

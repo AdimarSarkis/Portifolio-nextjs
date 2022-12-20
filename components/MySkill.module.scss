@@ -21,7 +21,7 @@
         flex-wrap: wrap;
     }
     @media (max-width: 500px){
-        top: 960px;
+        top: 1000px;
     }
 
     .skills{
@@ -40,6 +40,10 @@
             padding: 0;
             padding-top: 10px;
         }
-
+        @media (max-width: 500px){
+            width: 600px;
+            padding: 0;
+            padding-top: 10px;
+        }
     }
 }

@@ -5,16 +5,18 @@
     position: relative;
     bottom: 550px;
     width: 75%;
-    height: 480px;
+    height: 415px;
+    cursor: grab;
     overflow: hidden;
-    box-shadow: 10px 5px 20px 1px black;
+    
+    @media (max-width: 500px) {
+        bottom: 750px;
+    }
     .slider{
         z-index: 100;
-        width: 600%;
         height: 100.7%;
         display: flex;
-        
-    
-        
+        padding: 15px;
     }
+    
 }

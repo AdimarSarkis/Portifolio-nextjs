@@ -4,19 +4,42 @@ export default function CarouselBox({
     nome,
     descricao,
     image,
-    num
+    breve
 }){
     return (
         
-        <div className={`${styles.box} box${num}`}>
-            <Image src={image} className={styles.img} layout={`fill`}/>
-            <div className={styles.bg}></div>
-            <div className={styles.details}>
-                <h2>{nome}</h2>
-                <p>{descricao}</p>
-
-                <button><a>VISITAR</a></button>
-            </div>
+        <div className={`${styles.box}`}>
+            
+            {breve ? (
+                <>
+                <div className={styles.scroll}>
+                    <div className={styles.breve}>
+                        <span> Em Breve - Em Breve - Em Breve - Em Breve
+                            - Em Breve - Em Breve - Em Breve - Em Breve
+                            - Em Breve - Em Breve - Em Breve - Em Breve
+                        </span>
+                    </div>
+                    <div className={styles.breve}>
+                        <span> Em Breve - Em Breve - Em Breve - Em Breve
+                            - Em Breve - Em Breve - Em Breve - Em Breve
+                            - Em Breve - Em Breve - Em Breve - Em Breve
+                        </span>
+                    </div>
+                </div>
+                </>
+            ) : (
+                <>
+                <Image src={image} className={styles.img} layout={`fill`}/>
+                <div className={styles.details}>
+                    <h2>{nome}</h2>
+                    <p>{descricao}</p>
+                
+                    <button><a>VISITAR</a></button>
+                </div>
+                </>
+            )}
+            
+            
         </div>
 
     );
