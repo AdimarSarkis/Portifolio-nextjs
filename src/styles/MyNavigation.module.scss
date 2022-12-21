@@ -1,0 +1,143 @@
+$cor-detalhe: linear-gradient(83deg,  #11998e 10.8%, #38ef7d 94.3% );
+$cor-detalhe2: linear-gradient(83deg,  #36d1dc 10.8%, #5b86e5 94.3% );
+$cor-detalhe3: linear-gradient(83deg,  #ff5c00 10.8%, #ff9900 94.3% );
+$cor-detalhe4: linear-gradient(83deg,  #ff416c 10.8%, #ff4b2b 94.3% );
+.navigation {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 160px;
+    z-index: 100;
+    @media (max-width: 425px){
+        width: 85px;
+    }
+
+    .toggle {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(231, 222, 222);
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /*color: #e91e63;*/
+        background: $cor-detalhe4;
+        /*-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
+        font-weight: bold;
+        font-size: 1.4rem;
+        padding: 5px 20px;
+        
+        span {
+            position: relative;
+            width: 20px;
+            height: 50px;
+        }
+        span::before{
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #f6f6f6;
+            transition: 0.5s;
+        }
+        span::after{
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            /*background: linear-gradient(83deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );*/
+            background: #f6f6f6;
+            transition: 0.5s;
+        }
+        
+    }
+    .toggle::before{
+        
+        margin-right: 20px;
+        @media (min-width: 320px){
+            content: '';
+        }
+        @media (min-width: 768px){
+            content: 'Menu';    
+        }
+    }
+    .toggleToggle{
+        .toggleToggle::before{
+            content: 'Fechar';
+        }
+        span::before{
+            transform: rotate(225deg);
+            top: 24px;
+        }
+        span::after{
+            transform: rotate(135deg);
+            bottom: 24px;
+        }
+        
+    }
+    ul{
+        position: relative;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+        li {
+            position: relative;
+            list-style: none;
+            transition: 0.5s;
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(-250px, -16px);
+            width: 160px;
+            transition-delay: calc(0.1s * 0);
+            @media (max-width: 425px){
+                width: 85px;
+            }
+            a {
+                position: relative;
+                text-decoration: none;
+                display: block;
+                padding: 10px 20px;
+                height: 50px;
+                font-weight: bold;
+                background: rgb(231, 222, 222);
+                color: #333;
+                /*-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+            }
+            a:hover{
+                background: #f6f6f6;
+                color: #e91e63;
+                /*background: $cor-detalhe;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+            }
+            &:nth-child(2){
+                transition-delay: calc(0.1s * 1);
+            }
+            &:nth-child(3){
+                transition-delay: calc(0.1s * 2);
+            }
+        }
+        
+    }
+    
+}
+.navigationToggle{
+    ul{
+        li{
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-40px, -16px);
+        } 
+    } 
+}
