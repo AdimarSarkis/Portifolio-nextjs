@@ -21,10 +21,12 @@ export default function Project(){
             breve: false,
         },
         {
-            nome: "Lorem ispuls",
-            descricao: "Lorem Lorem Lorem Lorem Lorem Lorem",
-            image: "",
-            breve: true,
+            nome: "Projeto CRUD de usuários",
+            descricao: "Projeto crud desenvolvido com nextjs e JSON server",
+            image: "/imagens/crud.png",
+            linkGit: "https://github.com/AdimarSarkis/nextjs-crud",
+            linkSite: "https://nextjs-crud-rho.vercel.app",
+            breve: false,
         },
         {
             nome: "Lorem ispuls",
