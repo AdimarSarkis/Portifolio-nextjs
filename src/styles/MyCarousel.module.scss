@@ -9,6 +9,9 @@ $cor-detalhe4: linear-gradient(83deg,  #ff416c 10.8%, #ff4b2b 94.3% );
     background: rgba(0,0,0, .5);
     overflow: hidden;
     background-color: #111;
+    @media (max-width: 550px) {
+        width: 400px;
+    }
     &::before{
         content: '';
         position: relative;
@@ -77,6 +80,9 @@ $cor-detalhe4: linear-gradient(83deg,  #ff416c 10.8%, #ff4b2b 94.3% );
         left: 40px;
         top: 10px;
         width: 400px;
+        @media (max-width: 550px) {
+            left: 10px;
+        }
         h2{
             font-size: 3rem;
             font-weight: 500;

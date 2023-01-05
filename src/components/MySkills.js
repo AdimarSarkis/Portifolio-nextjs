@@ -21,11 +21,7 @@ export default function Skill(){
     return(
     <div className={styles.container}>
         <div className={styles.skills}>
-            <Cards
-                image={`/imagens/vue.svg`}
-                nome={"VueJs"}
-                nivel={"Básico"}
-            />
+            
             <Cards
                 image={`/imagens/reactjs.svg`}
                 nome={"Reactjs"}

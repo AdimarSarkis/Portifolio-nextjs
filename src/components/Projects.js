@@ -48,7 +48,7 @@ export default function Project(){
             drag={"x"}
             dragConstraints={{right: 0, left: -width}}>
                 {slides.map(item => (
-                    <motion.div ClassName={"item"} key={slides}>
+                    <motion.div className={"item"} key={slides}>
                         <CarouselBox 
                         nome={item.nome}
                         descricao={item.descricao}
