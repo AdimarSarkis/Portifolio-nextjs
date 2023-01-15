@@ -29,10 +29,12 @@ export default function Project(){
             breve: false,
         },
         {
-            nome: "Lorem ispuls",
-            descricao: "Lorem Lorem Lorem Lorem Lorem Lorem",
-            image: "",
-            breve: true,
+            nome: "Música Favoritas",
+            descricao: "Site desenvolvido com Reactjs com Typescript e graphQL",
+            image: "/imagens/mufav.png",
+            linkGit: "https://github.com/AdimarSarkis/musicasFav",
+            linkSite: "https://minhas-musicas-favoritas.netlify.app",
+            breve: false,
         },
     ]
 
