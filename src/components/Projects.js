@@ -36,6 +36,14 @@ export default function Project(){
             linkSite: "https://minhas-musicas-favoritas.netlify.app",
             breve: false,
         },
+        {
+            nome: '',
+            descricao:"",
+            image: "",
+            linkGit: "",
+            linkSite: "",
+            breve: true
+        },
     ]
 
     const carousel = useRef();
