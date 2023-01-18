@@ -3,21 +3,7 @@ import Cards from './Cards';
 
 
 export default function Skill(){
-    /*
-    <div>   
-            <div className={styles.softskills}>
-                <h3>Adaptabilidade</h3>
-                <h3>Esforçado</h3>
-                <h3>Proativo</h3>
-                <h3>Metodologia ágil</h3>
-                <h3>Flexibilidade</h3>
-                <h3>Resiliência</h3>
-                <h3>Paixão por Aprender</h3>
-                <h3>Responsabilidade</h3>
-                <h3>Colaboração</h3>
-            </div>
-        </div>
-    */
+   
     return(
     <div className={styles.container}>
         <div className={styles.skills}>
@@ -55,6 +41,11 @@ export default function Skill(){
             <Cards 
                 image={`/imagens/getbootstrap.svg`}
                 nome={"Bootstrap"}
+                nivel={"Básico"}
+            />              
+            <Cards 
+                image={`/imagens/Tailwind_CSS_Logo.svg`}
+                nome={"Tailwind css"}
                 nivel={"Básico"}
             />              
         </div>
