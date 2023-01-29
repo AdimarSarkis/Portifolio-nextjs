@@ -37,11 +37,19 @@ export default function Project(){
             breve: false,
         },
         {
+            nome: 'project-api',
+            descricao:"Pequeno projeto para o aprendizado de consumo de API com JSON placeholder com filtro de pesquisa",
+            image: "/imagens/api-exercice.png",
+            linkGit: "https://github.com/AdimarSarkis/project-api-exercice",
+            linkSite: "https://post-api-exercice.netlify.app",
+            breve: false
+        },
+        {
             nome: '',
             descricao:"",
             image: "",
             linkGit: "",
-            linkSite: "",
+            linkSite:"",
             breve: true
         },
     ]
