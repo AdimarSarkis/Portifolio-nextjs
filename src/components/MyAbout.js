@@ -3,11 +3,11 @@ export default function about (){
     return(
         <div className={styles.about}>
             <p>Olá, me chamo Adimar Sarkis da Cruz e tenho
-                                    23 anos, faço Engenharia de Controle e Automação
-                                    na Universidade Tecnológica Federal do Paraná campus
-                                    Cornélio Procópio. Comecei a aprender programação front-end
+                                    25 anos, profissional com formação em Engenharia de Controle e Automação e experiência de 1 ano na área. Perfil
+dinâmico e proativo, com foco no aprendizado constante e no trabalho em equipe, a fim de contribuir para o
+alcance das metas. Comecei a aprender desenvolvimento web
                                     durante a pandemia como forma de passar o tempo, mas acabei 
-                                    tomando gosto para o desenvolvimento web.
+                                    tomando gosto para o desenvolvimento.
             </p>
 
         </div>

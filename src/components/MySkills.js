@@ -8,20 +8,25 @@ export default function Skill(){
     <div className={styles.container}>
         <div className={styles.skills}>
             
+            <Cards 
+                image={`/imagens/mongodb-svgrepo-com.svg`}
+                nome={"MongoDB Atlas"}
+                nivel={"Básico"}
+            />
+            <Cards
+                image={`/imagens/express-svgrepo-com.svg`}
+                nome={"Express"}
+                nivel={"Básico"}
+            />
             <Cards
                 image={`/imagens/reactjs.svg`}
                 nome={"Reactjs"}
                 nivel={"Básico/Intermediário"}
             />
-            <Cards
-                image={`/imagens/sass.svg`}
-                nome={"Sass"}
-                nivel={"Básico"}
-            />
             <Cards 
-                image={`/imagens/html5.svg`}
-                nome={"HTML 5"}
-                nivel={"Intermediário"}
+                image={`/imagens/nodejs.svg`}
+                nome={"Node.js"}
+                nivel={"Básico"}
             />
             <Cards 
                 image={`/imagens/css3.svg`}
@@ -34,13 +39,8 @@ export default function Skill(){
                 nivel={"Básico"}
             />
             <Cards 
-                image={`/imagens/angular.svg`}
-                nome={"Angular"}
-                nivel={"Básico"}
-            />
-            <Cards 
-                image={`/imagens/getbootstrap.svg`}
-                nome={"Bootstrap"}
+                image={`/imagens/microsoftsqlserver-svgrepo-com.svg`}
+                nome={"SQL Server"}
                 nivel={"Básico"}
             />              
             <Cards 

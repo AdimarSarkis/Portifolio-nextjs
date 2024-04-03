@@ -6,13 +6,14 @@
 .about{
     display: flex;
     justify-content: center;
+
     p{
         position: absolute;
-        top: 250px;
+        top: 200px;
         width: 40rem;
         font-size: 1.6rem;
         font-weight: 400;
-        text-align: center;
+        text-align: justify;
         z-index: 1;
         @media (max-width: 768px){ /* responsividade para tablet*/
             top: 150px;
@@ -28,7 +29,7 @@
        
         @media (min-width: 1024px){
             width: 55rem;
-            top: 230px;
+            top: 150px;
             font-size: 2rem;
         }
     }

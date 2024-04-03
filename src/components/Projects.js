@@ -45,6 +45,14 @@ export default function Project(){
             breve: false
         },
         {
+            nome: 'PlayerMusic',
+            descricao:"Pequeno projeto de player de músicas",
+            image: "/playerMusic.png",
+            linkGit: "https://github.com/AdimarSarkis/playerMusic",
+            linkSite:"https://music-adimar.netlify.app",
+            breve: false
+        },
+        {
             nome: '',
             descricao:"",
             image: "",
